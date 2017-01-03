@@ -17,6 +17,9 @@ public class GirlController {
 	@Autowired
 	private GirlRepository girlRepository;
 
+	@Autowired
+	private GirlService girlService;
+
 	/**
 	 * 查詢所有女生列表
 	 *
@@ -96,5 +99,13 @@ public class GirlController {
 	public List<Girl> girlListByAge(@PathVariable("age") Integer age) {
 		return girlRepository.findByAge(age);
 
+	}
+
+	/**
+	 * Transaction 同時插入兩筆
+	 */
+	@PostMapping(value = "/girls/two")
+	public void girlTwo() {
+		girlService.insertTwo();
 	}
 }
