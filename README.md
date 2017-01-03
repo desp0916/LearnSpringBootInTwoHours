@@ -1,4 +1,4 @@
-# 2小时学会SpringBoot2-1
+# 2 小时学会 Spring Boot
 
 這是「慕課網」上《[2小时学会SpringBoot](http://www.imooc.com/learn/767)》課程的原始碼與筆記。
 
